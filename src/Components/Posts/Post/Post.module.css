@@ -1,0 +1,101 @@
+.title { 
+    display: flex;
+    justify-content: center;
+    align-items: baseline; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    text-align: center;
+    font-weight: 100; 
+    line-height: 1.7;
+    font-family: Lustria, Georgia, serif;
+    color: #222222;
+    font-size: 24px; 
+    margin: auto 0;
+}
+
+.content img {
+    width: 25px;
+    margin-left: 20px;
+}
+
+
+.date {
+    position: relative;
+    color: #be9656;
+    text-align: center;
+}
+.date span {
+    background-color: white;
+    padding: 0 10px;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.date:after {
+    position: absolute;
+    content:"";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    width: 50%;
+    margin: 0 auto;
+    border-top: 1px solid #be9656;
+    z-index: -1;
+}
+
+.longDescriptrion {
+    margin-top: 34px;
+}
+.imgDescriptrion {
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+    opacity: 0.5;
+    padding-bottom: 0 !important;
+    font-size: 12px;
+    padding: 6px 0;
+}
+.title img {
+    display: none;
+}
+
+.content p {
+    line-height: 1.7;
+    word-wrap: break-word;
+    color: black;
+    font-size: 14px;
+}
+
+.phrase{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+    font-size: 16px;
+    opacity: 0.5;
+    padding: 12px 0;
+}
+@media screen and (max-width: 991px) {
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title img {
+        display: block;
+    }
+}
+@media screen and (max-width: 470px) {
+    .content p {
+        line-height: 1.4;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title { 
+        line-height: 1.4;
+        font-size: 14px; 
+        margin: auto 0;
+    }
+}

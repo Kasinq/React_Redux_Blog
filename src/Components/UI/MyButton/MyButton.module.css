@@ -1,0 +1,15 @@
+.myBtn {
+    width: 100px;
+    padding: 6px 10px;
+    background-color: rgb(214, 214, 214);
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.myBtn:hover {
+    background-color: transparent;
+    transition: 0.4s;
+}

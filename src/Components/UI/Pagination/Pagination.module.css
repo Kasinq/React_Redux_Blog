@@ -1,0 +1,38 @@
+.pagitation {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 60px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.pageCurrent {
+    color: #be9656;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 18px;
+    padding: 4px;
+    margin-right: 2px;
+}
+
+.page {
+    padding: 4px;
+    margin-right: 2px;
+}
+
+
+@media screen and (max-width: 470px) {
+    .pagitation { 
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 500;
+        font-size: 14px;
+        width: 100%;
+    }
+    .pageCurrent {
+        font-size: 16px;
+    }
+    .page {
+        margin-right: 1px;
+    }
+}

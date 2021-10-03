@@ -1,0 +1,6 @@
+.inner p {
+    line-height: 1.4;
+    word-wrap: break-word;
+    color: black;
+    font-size: 14px;
+}
