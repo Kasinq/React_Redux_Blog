@@ -1,13 +1,13 @@
 import React from 'react'
-import style from './Pagination.module.css'
+import './Pagination.scss'
 
 const Pagination = ({pagesArray, setPage, page}) => {
 
     return (
-        <div className={style.pagitation}>
+        <div className="pagination">
             {
                 pagesArray.map(p =>
-                    <span className={page === p ? style.pageCurrent : style.page} onClick={() => setPage(p)} key={p}>
+                    <span className={page === p ? 'pageCurrent' : 'page'} onClick={() => setPage(p)} key={p}>
                         {p}
                     </span>
                 )

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SubscriptionForm from "../../UI/SubscriptionForm/SubscriptionForm";
-import style from "./AuthorInfo.module.css"
+import "./AuthorInfo.scss"
 
 const AuthorInfo = () => {
 
@@ -8,21 +8,21 @@ const AuthorInfo = () => {
     const [profileDescription, setProfileDescription] = useState('Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.')
 
     return (
-        <div className={style.info}>
-            <div className={style.inner}>
+        <div className="author-info">
+            <div className="about-me">
                 <div>ABOUT ME</div>
-                <img className={style.avatar} src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/letsblog/demo/wp-content/uploads/2015/07/photography_2.jpg" alt="" />
-                <p className={style.textDescription}>{profileDescription}</p>
-                <div className={style.signature}>
-                    <img className={style.sign} src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/letsblog/demo/wp-content/uploads/2015/07/signature.png" alt="" />
+                <img className="avatar" src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/letsblog/demo/wp-content/uploads/2015/07/photography_2.jpg" alt="" />
+                <p className="textDescription">{profileDescription}</p>
+                <div className="signature">
+                    <img className="sign" src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/letsblog/demo/wp-content/uploads/2015/07/signature.png" alt="" />
                 </div>
             </div>
-            <div className={style.subscription}>
+            <div className="subscription">
                 <SubscriptionForm />
             </div>
-            <div className={style.inner}>
+            <div className="about-me follow-me">
                 <div>FOLLOW ME ON</div>
-                <div className={style.social}>
+                <div className="social">
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/49/49052.png" alt="Facebook" title="Facebook" /></a>
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/48/48898.png" alt="Instagram" title="Instagram" /></a>
                     <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/48/48899.png" alt="Pinterest" title="Pinterest" /></a>

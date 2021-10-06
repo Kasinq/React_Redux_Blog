@@ -1,20 +1,19 @@
 import React from 'react'
 import { useHistory } from 'react-router'
-import style from './NewsCatalog.module.css'
+import style from './NewsCatalog.scss'
 
-const NewsСatalog = ({news}) => {
+const NewsСatalog = ({ news }) => {
     const router = useHistory()
-
     const renderList = news.map(news => {
         const { id, title, body } = news
         return (
-            <div key={id} className={style.content} >
+            <div key={id}>
                 <img onClick={() => router.push(`/new/${id}`)} src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/letsblog/demo/wp-content/uploads/2015/07/photography_2.jpg" alt="" />
-                <div onClick={() => router.push(`/new/${id}`)} className={style.title_inner}>
-                    <span className={style.title}>{title}</span>
+                <div onClick={() => router.push(`/new/${id}`)} className="title_inner">
+                    <span className="title-card">{title}</span>
                 </div>
-                <div className={style.date}><span>July 22, 2021</span></div>
-                <div className={style.text}>
+                <div className="date"><span>July 22, 2021</span></div>
+                <div className="text">
                     {body}
                 </div>
                 <button onClick={() => router.push(`/new/${id}`)}>Read More</button>
@@ -22,9 +21,10 @@ const NewsСatalog = ({news}) => {
         )
     })
 
-    return (<>
-        { renderList }
-    </>)
+    return (<div className="catalog" >
+        {renderList}
+    </div>
+    )
 }
 
 

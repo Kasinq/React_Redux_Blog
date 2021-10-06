@@ -1,5 +1,5 @@
 import React, { useState, useSelector, useEffect } from "react";
-import style from "./LeaveComment.module.css"
+import  "./LeaveComment.scss"
 
 const LeaveComment = ({ newId, comments }) => {
 
@@ -22,11 +22,11 @@ const LeaveComment = ({ newId, comments }) => {
     }
 
     return (
-        <div className={style.leaveComment}>
-            <div className={style.headerText} >
+        <div className="leaveComment">
+            <div className="headerText" >
                 <span>Leave a Comment</span>
             </div>
-            <div className={style.desc}>Your email address will not be published. Required fields are marked *</div >
+            <div className="desc">Your email address will not be published. Required fields are marked *</div >
             <form>
                 <span>Comment</span>
                 <textarea
@@ -34,7 +34,7 @@ const LeaveComment = ({ newId, comments }) => {
                     value={comment}
                     maxLength='600'
                     cols="45" rows="8"></textarea>
-                <div className={style.comentatorInfo}>
+                <div className="comentatorInfo">
                     <div>
                         <span>Name*</span>
                         <input
@@ -51,12 +51,12 @@ const LeaveComment = ({ newId, comments }) => {
                             placeholder="Email*"
                             type="text" />
                     </div>
-                    <div className={style.webSite}>
+                    <div className="webSite">
                         <span>Website</span>
                         <input placeholder="Website" type="text" />
                     </div>
                 </div>
-                <button onClick={addComment} className={style.btn}>Post Comment</button>
+                <button onClick={addComment} className="leave-comment">Post Comment</button>
             </form>
         </div>
 

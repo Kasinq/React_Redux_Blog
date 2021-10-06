@@ -8,10 +8,9 @@ import Post from "./Post/Post"
 import AuthorInfo from "./AuthorInfo/AuthorInfo"
 import { selectedNew } from "../../Redux/actions/newsAction"
 import PostComments from "../PostComments/PostComments"
-import style from "./NewDitail.module.css"
 import PostRelated from "../PostRelated/PostRelated"
 import LeaveComment from "../LeaveComment/LeaveComment"
-import IcoMenu from "../UI/IcoMenu/IcoMenu"
+import "./NewDitail.scss"
 
 
 const Posts = () => {
@@ -39,15 +38,15 @@ const Posts = () => {
     return (
         <>
             <PageBacgroundHeader imagePath={imagePath} pageTitle={pageTitle} />
-            <div className={style.container}>
-                <div className={style.inner}>
-                    <div className={style.postInfo}>
+            <div className="container">
+                <div className="ditail-post">
+                    <div className="postInfo">
                         <Post news={news} />
                         <PostComments newId={newId.id} comments={comments} />
                         <PostRelated news={news} />
                         <LeaveComment newId={newId.id} comments={comments} />
                     </div>
-                    <span className={style.author}>
+                    <span className="author">
                         <AuthorInfo />
                     </span>
                 </div>

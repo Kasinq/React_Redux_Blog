@@ -1,13 +1,15 @@
-.pagitation {
+@import "../../../common/colors.scss";
+
+.pagination {
     text-align: center;
     cursor: pointer;
-    margin-bottom: 60px;
     font-weight: 600;
-    color: #222222;
+    color: $font-secondary;
+    margin: 40px 25px;
 }
 
 .pageCurrent {
-    color: #be9656;
+    color: $secondary-color;
     font-weight: 600;
     text-decoration: underline;
     font-size: 18px;
@@ -22,12 +24,11 @@
 
 
 @media screen and (max-width: 470px) {
-    .pagitation { 
+    .pagination { 
         display: flex;
         flex-wrap: wrap;
         font-weight: 500;
         font-size: 14px;
-        width: 100%;
     }
     .pageCurrent {
         font-size: 16px;

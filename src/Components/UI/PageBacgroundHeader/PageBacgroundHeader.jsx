@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import style from './PageBacgroundHeader.module.css'
+import './PageBacgroundHeader.scss'
 
 const NewsHeader = ({ children, imagePath, pageTitle }) => {
 
@@ -10,11 +10,11 @@ const NewsHeader = ({ children, imagePath, pageTitle }) => {
     })
 
     return (
-        <div className={style.header} style={{ backgroundImage: imagePath[1] }}>
+        <div className="PageBacgroundHeader" style={{ backgroundImage: imagePath[1] }}>
             <img style={{ opacity: scrolling }} src={imagePath[0]} alt="" />
-            <div className={style.content}>
+            <div className="PageBacgroundHeader-content">
                 {children}
-                <h1 className={style.title}>
+                <h1 className="NewsCategory">
                     {pageTitle[0]}
                 </h1>
                 <div>{pageTitle[1]}</div>

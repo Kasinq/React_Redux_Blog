@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import IcoMenu from "../../UI/IcoMenu/IcoMenu";
-import style from "./Post.module.css"
+import "./Post.scss"
 
 const Post = ({news}) => {
 
@@ -15,22 +15,22 @@ const Post = ({news}) => {
   
 
     return (<>
-        <div className={style.content}>
-            <h1 className={style.title}>
+        <div className="post-body">
+            <h1 className="post-title">
                 {news.title}
                 <IcoMenu />
             </h1>
-            <div className={style.date}><span>July 22, 2021</span></div>
-            <div className={style.longDescriptrion}>
+            <div className="post-date"><span>July 22, 2021</span></div>
+            <div className="longDescriptrion">
                 <p>{postText[0]}</p>
                 <p>{postText[1]}</p>
             </div>
             <img src="../images/postDitail.jpg" alt="" />
-            <div className={style.imgDescriptrion}>{imgText}</div>
-            <div className={style.longDescriptrion}>
+            <div className="imgDescriptrion">{imgText}</div>
+            <div className="longDescriptrion">
                 <p>{news.body}</p>
             </div>
-            <div className={style.phrase}>
+            <div className="phrase">
                 {phraseText}
             </div>
             <p>{endText}</p>

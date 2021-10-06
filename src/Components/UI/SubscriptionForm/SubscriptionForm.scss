@@ -1,0 +1,47 @@
+@import "../../../common/colors.scss";
+
+.subMe {
+    text-align    : center;
+    margin        : 20px 0;
+    font-family   : Lato, Helvetica, Arial, sans-serif;
+    font-size     : 12px;
+    font-weight   : 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color         : $font-primary;
+}
+
+.subscribeForm {
+    input {
+        width      : 100%;
+        display    : flex;
+        min-height : 32px;
+        border     : none;
+        text-align : center;
+        background : #fcfcfc;
+        border     : 1px solid #e1e1e1;
+        outline    : none;
+        line-height: normal;
+        margin     : 7px 0;
+        box-sizing: border-box;
+    }
+
+    button {
+        width         : 100%;
+        min-height    : 32px;
+        border        : none;
+        text-align    : center;
+        background    : #888;
+        outline       : none;
+        margin        : 7px 0;
+        font-size     : 11px;
+        letter-spacing: 2px;
+        color         : white;
+        cursor        : pointer;
+    }
+
+    button:hover {
+        background: transparent;
+        transition: 0.3s;
+    }
+}

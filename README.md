@@ -24,6 +24,7 @@ In the project for work with the server we use external API which is located at 
 - ### Redux
 - ### Axios REST API
 - ### React Hooks
+- ### Preprocessors(sass)
 ***
 ### Getting started
 

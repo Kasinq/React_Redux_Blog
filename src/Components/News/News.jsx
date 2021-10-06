@@ -6,11 +6,11 @@ import { setNews } from "../../Redux/actions/newsAction";
 import Futer from "../Futer/Futer";
 import Preloader from "../UI/Preloader/Preloader";
 import { getPageCount, getpagesArray } from "../utils/pages";
-import style from './News.module.css'
 import PageBacgroundHeader from "../UI/PageBacgroundHeader/PageBacgroundHeader";
 import Pagination from "../UI/Pagination/Pagination";
 import NewsСatalog from "./NewsСatalog/NewsСatalog";
 import AddNewsForm from "./AddNewsForm/AddNewsForm";
+import './News.scss'
 
 const News = () => {
     const news = useSelector((state) => state.newsPage.news)
@@ -81,14 +81,14 @@ const News = () => {
 
     return (<>
         <PageBacgroundHeader imagePath={imagePath} pageTitle={pageTitle}>
-            <input className={style.bg_inp} value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder="search" />
+            <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder="search" />
         </PageBacgroundHeader>
-        <AddNewsForm modal={modal} setModal={setModal} addNew={addNew} title={title} body={body} setTitle={setTitle} setBody={setBody} />
             {sortedAndSearchNews.length
                 ? <></>
                 : <div>Пости не знайдені</div>
             }
-        <div className={style.container}>
+        <div className="container">
+            <AddNewsForm modal={modal} setModal={setModal} addNew={addNew} title={title} body={body} setTitle={setTitle} setBody={setBody} />
             {isLoading
                 ? <Preloader />
                 : <NewsСatalog news={sortedAndSearchNews} />

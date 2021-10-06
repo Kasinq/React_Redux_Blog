@@ -3,6 +3,7 @@ import { Route } from 'react-router';
 import Friends from './Components/Friends/Friends';
 import News from './Components/News/News';
 import NewDitail from './Components/Posts/NewDitail';
+import './app.scss'
 
 function App() {
   return (

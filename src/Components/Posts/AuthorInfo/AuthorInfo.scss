@@ -1,0 +1,79 @@
+@import "../../../common/colors.scss";
+
+.about-me {
+    border : 1px solid rgba(26, 26, 26, 0.2);
+    padding: 20px 14px;
+
+    div {
+        font-size     : 12px;
+        font-weight   : 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color         : $font-secondary;
+        text-align    : center;
+    }
+
+    p {
+        line-height: 1.4;
+        word-wrap  : break-word;
+        color      : $primary-color;
+        font-size  : 14px;
+    }
+}
+
+.avatar {
+    margin-top: 20px;
+}
+
+.signature {
+    text-align: center;
+}
+
+.sign {
+    width : 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.subscription {
+    margin          : 40px 0;
+    background-color: $font-secondary;
+    padding         : 20px 14px;
+}
+
+.social {
+    display        : flex;
+    justify-content: space-around;
+
+    img {
+        width     : 20px;
+        margin-top: 10px;
+    }
+
+    img:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .author-info {
+        max-width: 360px;
+    }
+
+    // .signature {
+    //     img {
+    //         width : 280px;
+    //         height: auto;
+    //         margin: 0 auto;
+    //     }
+    // }
+
+    .about-me p {
+        font-size: 12px;
+    }
+
+    .social img {
+        width: 30px;
+    }
+}
